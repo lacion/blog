@@ -20,6 +20,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.6",
     "clsx": "^1.1.1",
     "next": "^12.1.0",
     "react": "^17.0.2",
@@ -28,6 +30,7 @@
     "tailwind-merge": "^1.2.0"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.2",
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
     "@svgr/webpack": "^6.2.1",

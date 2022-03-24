@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import BlogList from '@/components/blog/BlogList';
+import BlogDetail from "@/components/blog/BlogDetail";
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
@@ -12,13 +12,12 @@ import Seo from '@/components/Seo';
  * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
  */
 
-export default function HomePage() {
+export default function PostDetail() {
   return (
     <Layout>
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
-
-      <BlogList />
+      <BlogDetail/>
     </Layout>
   );
 }

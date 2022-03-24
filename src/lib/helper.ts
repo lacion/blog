@@ -25,3 +25,7 @@ export function openGraph({
     ogTemplateTitle ? `&templateTitle=${ogTemplateTitle}` : ''
   }`;
 }
+
+export function classNames(...classes) {
+  return classes.filter(Boolean).join(' ');
+}
