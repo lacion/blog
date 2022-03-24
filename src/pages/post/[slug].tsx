@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import BlogDetail from "@/components/blog/BlogDetail";
+import BlogDetail from '@/components/blog/BlogDetail';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
@@ -17,7 +17,7 @@ export default function PostDetail() {
     <Layout>
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
-      <BlogDetail/>
+      <BlogDetail />
     </Layout>
   );
 }

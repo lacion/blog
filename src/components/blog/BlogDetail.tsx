@@ -1,3 +1,5 @@
+import NextImage from '../NextImage';
+
 export default function BlogDetail() {
   return (
     <div className='relative overflow-hidden bg-white py-16'>
@@ -121,7 +123,7 @@ export default function BlogDetail() {
             Eleifend egestas fringilla sapien.
           </p>
         </div>
-        <div className='prose prose-indigo prose-lg mx-auto mt-6 text-gray-500'>
+        <div className='prose prose-lg prose-indigo mx-auto mt-6 text-gray-500'>
           <p>
             Faucibus commodo massa rhoncus, volutpat. <strong>Dignissim</strong>{' '}
             sed <strong>eget risus enim</strong>. Mattis mauris semper sed amet
@@ -166,13 +168,14 @@ export default function BlogDetail() {
             praesent donec est. Odio penatibus risus viverra tellus varius sit
             neque erat velit.
           </p>
-          <figure>
-            <img
-              className='w-full rounded-lg'
+          <figure className='w-full rounded-lg'>
+            <NextImage
+              className='rounded-lg'
               src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3'
               alt=''
               width={1310}
               height={873}
+              layout='responsive'
             />
             <figcaption>
               Sagittis scelerisque nulla cursus in enim consectetur quam.
