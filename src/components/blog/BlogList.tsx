@@ -1,4 +1,5 @@
 import BlogCard from './BlogCard';
+import { ITeamSelectorProps } from './types';
 const posts = [
   {
     title: 'Boost your conversion rate',
@@ -73,8 +74,8 @@ export default function BlogList() {
           </p>
         </div>
         <div className='mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3'>
-          {posts.map((post) => (
-            <BlogCard key={post.title} post={post} />
+          {posts.map((post: ITeamSelectorProps) => (
+            <BlogCard key={post.title} {...post} />
           ))}
         </div>
       </div>
