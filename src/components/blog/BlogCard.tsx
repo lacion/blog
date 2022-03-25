@@ -17,13 +17,15 @@ export default function BlogCard({
   return (
     <div className='flex flex-col overflow-hidden rounded-lg shadow-lg'>
       <div className='flex-shrink-0'>
-        <NextImage
-          className='h-48 w-full object-cover'
-          src={imageUrl}
-          alt=''
-          width={1679}
-          height={1079}
-        />
+        <div className='h-50 w-full object-cover'>
+          <NextImage
+            src={imageUrl}
+            alt=''
+            width={1679}
+            height={1079}
+            layout='responsive'
+          />
+        </div>
       </div>
       <div className='flex flex-1 flex-col justify-between bg-white p-6'>
         <div className='flex-1'>
